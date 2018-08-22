@@ -1,0 +1,16 @@
+{
+    "name": "rebornweb/silverstripe-designer",
+    "description": "allow page templates to be edited through CMS",
+    "type": "silverstripe-vendormodule",
+    "require": {
+        "silverstripe/vendor-plugin": "^1.3@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vinnie watson",
+            "email": "vinstah@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

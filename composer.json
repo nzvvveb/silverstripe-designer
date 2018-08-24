@@ -12,5 +12,8 @@
             "email": "vinstah@gmail.com"
         }
     ],
+    "extra": {
+        "expose": ["client"]
+    },
     "minimum-stability": "dev"
 }

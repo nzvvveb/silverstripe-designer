@@ -2,3 +2,6 @@
 Name: silverstripe-designer
 ---
 
+Silverstripe\CMS\Model\SiteTree:
+  extensions:
+    - RebornWeb\SilverstripeDesigner\Extension\DesignerExtension

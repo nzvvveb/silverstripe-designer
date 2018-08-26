@@ -1,5 +1,5 @@
 var editor = grapesjs.init({
-    container : '$ID',
+    container : '#$TemplateID',
     fromElement: true,
     plugins: ['gjs-preset-webpage'],
     storageManager: { type: null }

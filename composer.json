@@ -15,5 +15,10 @@
     "extra": {
         "expose": ["client"]
     },
+    "autoload": {
+        "psr-4": {
+            "RebornWeb\\Designer\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }

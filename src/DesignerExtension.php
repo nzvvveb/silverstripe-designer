@@ -2,20 +2,13 @@
 
 namespace RebornWeb\SilverstripeDesigner\Extension;
 
-use SilverStripe\Security\Member;
-use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataObject;
-use SilverStripe\Control\Email\Email;
-use SilverStripe\Forms\DropdownField;
-use SilverStripe\Security\Permission;
 use SilverStripe\View\Requirements;
-use SilverStripe\Security\SecurityToken;
 use SilverStripe\ORM\DataExtension;
+use SilverStripe\Control\Controller;
 
 /**
- * An extension that allows theme authors to mark certain regions as editable
+ * An extension that allows designer to be visible
  *
- * @author Marcus Nyeholt <marcus@silverstripe.com.au>
  */
 class DesignerExtension extends DataExtension
 {
@@ -42,5 +35,14 @@ class DesignerExtension extends DataExtension
     public function ShowDesigner()
     {
         return isset($_GET['showdesigner']);
+    }
+
+    public function alternatePreviewLink($link)
+    {
+        if ($this->ShowDesigner()) {
+            $link = Controller::join_links($link, '?showdesigner=true');
+        }
+
+        return $link;
     }
 }

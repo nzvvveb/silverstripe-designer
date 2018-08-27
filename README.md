@@ -28,7 +28,7 @@ Create beautiful templates using the cms preview or front end
 
 ## Usage
 
-![silverstripe-designer-permisions](images/permissions.png?raw=true "silverstripe designer permissions")
+![silverstripe-designer-permissions](images/permissions.jpg?raw=true "silverstripe designer permissions")
 
 * Switch on PERM_FRONTEND_DESIGN in admin/security
 * switch on the design with URL get param `?showdesigner=true`

@@ -1,37 +1,40 @@
 # Silverstripe designer (front end designer)
 
-Create beautiful templates using the cms preview or front end with help from GrapesJS webpage builder
+Create beautiful templates using the cms preview or front end
 
-![silverstripe-designer](screen.png?raw=true "silverstripe designer")
+![silverstripe-designer](images/screen.png?raw=true "silverstripe designer")
 
 ## Installation
 
-```js
-// include grapejs
-Requirements::javascript('/silverstripe-designer/vendor/grapesjs/dist/grapes.min.js');
-Requirements::css('/silverstripe-designer/vendor/grapesjs/dist/css/grapes.min.css');
+(you may need to set up your composer.json to reference github repository)
 
-// include these to load the preset webpage
-Requirements::javascript('/silverstripe-designer/vendor/grapesjs/dist/grapesjs-preset-webpage.min.js');
-Requirements::css('/silverstripe-designer/vendor/grapesjs/dist/css/grapesjs-preset-webpage.min.css');
-Requirements::javascript('//static.filestackapi.com/v3/filestack.js');
-```
+* `composer require rebornweb/silverstripe-designer @dev`
+* `dev/build?flush=all`
 
 ## Update Layout/Page.ss to include
 
 ```HMTL
-<!-- replace $Layout with this div (I replace the whole <div class="main"> -->
-<div id="gjs"></div>
-<script type="text/javascript">
-    var editor = grapesjs.init({
-        container : '#gjs',
-        plugins: ['gjs-preset-webpage']
-  });
-</script>
+<% include Rebornweb\Designer\Designer TemplateID="gjs" %>
+
+<div class="content-container unit size3of4 lastUnit" id="gjs">
+<article>
+    <h1>$Title</h1>
+    <div class="content">$Content</div>
+</article>
+    $Form
+    $CommentsForm
+</div
 ```
+
+## Usage
+
+![silverstripe-designer-permisions](images/permissions.png?raw=true "silverstripe designer permissions")
+
+* Switch on PERM_FRONTEND_DESIGN in admin/security
+* switch on the design with URL get param `?showdesigner=true`
 
 ## Enhancements
 
 * Save to Silverstripe backend
-* Set permissions for showing the builder
+* Set Permissions for showing the builder
 * Render SS data inside the builder (Content, Title)

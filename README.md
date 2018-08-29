@@ -6,9 +6,7 @@ Create beautiful templates using the cms preview or front end
 
 ## Installation
 
-(you may need to set up your composer.json to reference github repository)
-
-* `composer require rebornweb/silverstripe-designer @dev`
+* `composer require nzvvveb/silverstripe-designer`
 * `dev/build?flush=all`
 
 ## Update Layout/Page.ss to include

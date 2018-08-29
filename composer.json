@@ -1,5 +1,5 @@
 {
-    "name": "rebornweb/silverstripe-designer",
+    "name": "nzvvveb/silverstripe-designer",
     "description": "allow page templates to be edited through CMS",
     "type": "silverstripe-vendormodule",
     "require": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RebornWeb\\Designer\\": "src/"
+            "NzVvveb\\Designer\\": "src/"
         }
     },
     "minimum-stability": "dev"

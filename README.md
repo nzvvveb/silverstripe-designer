@@ -12,7 +12,7 @@ Create beautiful templates using the cms preview or front end
 ## Update Layout/Page.ss to include
 
 ```HMTL
-<% include Rebornweb\Designer\Designer TemplateID="gjs" %>
+<% include NzVvveb\Designer\Designer TemplateID="gjs" %>
 
 <div class="content-container unit size3of4 lastUnit" id="gjs">
 <article>

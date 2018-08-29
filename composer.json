@@ -1,5 +1,5 @@
 {
-    "name": "vinstah/silverstripe-designer",
+    "name": "rebornweb/silverstripe-designer",
     "description": "allow page templates to be edited through CMS",
     "type": "silverstripe-vendormodule",
     "require": {

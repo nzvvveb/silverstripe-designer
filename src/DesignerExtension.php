@@ -23,7 +23,7 @@ class DesignerExtension extends DataExtension
         Requirements::css('//unpkg.com/grapesjs/dist/css/grapes.min.css');
 
         Requirements::css('rebornweb/silverstripe-designer: client/plugins/gram.min.css');
-        Requirements::javascript('rebornweb/silverstripe-designer: client/plugins/grapejs-plugin-export.js');
+        Requirements::javascript('rebornweb/silverstripe-designer: client/plugins/grapesjs-plugin-export.min.js');
         Requirements::javascript('rebornweb/silverstripe-designer: client/plugins/gram.js');
 
         Requirements::javascriptTemplate('rebornweb/silverstripe-designer: client/designer.js', ['TemplateID' => $TemplateID]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace RebornWeb\SilverstripeDesigner\Extension;
+namespace NzVvveb\SilverstripeDesigner\Extension;
 
 use SilverStripe\View\Requirements;
 use SilverStripe\ORM\DataExtension;
@@ -22,11 +22,11 @@ class DesignerExtension extends DataExtension
         Requirements::javascript('//unpkg.com/grapesjs');
         Requirements::css('//unpkg.com/grapesjs/dist/css/grapes.min.css');
 
-        Requirements::css('rebornweb/silverstripe-designer: client/plugins/gram.min.css');
-        Requirements::javascript('rebornweb/silverstripe-designer: client/plugins/grapesjs-plugin-export.min.js');
-        Requirements::javascript('rebornweb/silverstripe-designer: client/plugins/gram.js');
+        Requirements::css('nzvvveb/silverstripe-designer: client/plugins/gram.min.css');
+        Requirements::javascript('nzvvveb/silverstripe-designer: client/plugins/grapesjs-plugin-export.min.js');
+        Requirements::javascript('nzvvveb/silverstripe-designer: client/plugins/gram.js');
 
-        Requirements::javascriptTemplate('rebornweb/silverstripe-designer: client/designer.js', ['TemplateID' => $TemplateID]);
+        Requirements::javascriptTemplate('nzvvveb/silverstripe-designer: client/designer.js', ['TemplateID' => $TemplateID]);
     }
 
     /**

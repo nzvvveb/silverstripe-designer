@@ -1,6 +1,6 @@
 <?php
 
-namespace RebornWeb\SilverstripeDesigner\Controller;
+namespace NzVvveb\SilverstripeDesigner\Controller;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Security\PermissionProvider;

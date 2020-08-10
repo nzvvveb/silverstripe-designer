@@ -4,7 +4,7 @@ Create beautiful templates using the cms preview or front end
 
 ![silverstripe-designer](images/screen.png?raw=true "silverstripe designer")
 
-Design your website without editing any frontend templates
+Design your website without editing any frontend templates (designer user permission needed)
 ## Installation
 
 * `composer require nzvvveb/silverstripe-designer`
